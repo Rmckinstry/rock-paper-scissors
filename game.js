@@ -30,3 +30,51 @@ function computerPlay () {
         return ("scissor")
     }
 }
+
+function compareAnswers(playerSelection, computerSelection){
+
+    if(computerSelection == "rock"){
+        if (playerSelection == "rock"){
+
+        }
+
+        else if (playerSelection == "paper"){
+
+        }
+
+        else {
+
+        }
+    }
+
+    else if (computerSelection == "paper"){
+        if (playerSelection == "rock"){
+
+        }
+
+        else if (playerSelection == "paper"){
+
+        }
+
+        else {
+            
+        }
+    }
+
+    else {
+        if (playerSelection == "rock"){
+
+        }
+
+        else if (playerSelection == "paper"){
+
+        }
+
+        else {
+            
+        }
+    }
+}
+
+const computerAnswer = computerPlay();
+const playerAnswer = "rock";
