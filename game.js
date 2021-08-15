@@ -4,6 +4,7 @@
 prompt asks player for their answer
 will accept any variation of rock paper scissors
     will be case insensitive, and will accept scissor/scissors
+    **needs answer checking or answer validation
 
 compare computer answer to player answer:
     if comp = rock =>       player: rock == tie, player: paper == win, player: scissor == lose
@@ -29,6 +30,13 @@ function computerPlay () {
     else{
         return ("scissor");
     }
+}
+
+function playerPlay (){
+    let selection =""
+    selection = window.prompt("Please choose your answer: Rock, Paper, Scissors");
+    selection = selection.toLowerCase();
+    
 }
 
 function compareAnswers(playerSelection, computerSelection){
@@ -78,6 +86,7 @@ function compareAnswers(playerSelection, computerSelection){
 
 const computerAnswer = computerPlay();
 console.log(computerAnswer);
-const playerAnswer = "rock";
+const playerAnswer = playerPlay();
+console.log(playerAnswer);
 
 console.log(compareAnswers(playerAnswer,computerAnswer));
