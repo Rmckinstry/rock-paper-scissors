@@ -21,13 +21,13 @@ function computerPlay () {
     let number = Math.round((Math.random()*2));
 
     if (number == 0){
-        return("rock")
+        return("rock");
     }
     else if (number == 1){
-        return ("paper")
+        return ("paper");
     }
     else{
-        return ("scissor")
+        return ("scissor");
     }
 }
 
@@ -35,46 +35,49 @@ function compareAnswers(playerSelection, computerSelection){
 
     if(computerSelection == "rock"){
         if (playerSelection == "rock"){
-
+            return (0);  //0 = tie
         }
 
         else if (playerSelection == "paper"){
-
+            return (1);  //human win
         }
 
         else {
-
+            return(2);   //computer win
         }
     }
 
     else if (computerSelection == "paper"){
         if (playerSelection == "rock"){
-
+            return(2);
         }
 
         else if (playerSelection == "paper"){
-
+            return(0);
         }
 
         else {
-            
+            return(1);
         }
     }
 
-    else {
+    else { //scissor
         if (playerSelection == "rock"){
-
+            return (1);
         }
 
         else if (playerSelection == "paper"){
-
+            return (2);
         }
 
         else {
-            
+            return (0);
         }
     }
 }
 
 const computerAnswer = computerPlay();
+console.log(computerAnswer);
 const playerAnswer = "rock";
+
+console.log(compareAnswers(playerAnswer,computerAnswer));
