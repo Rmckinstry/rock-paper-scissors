@@ -36,56 +36,76 @@ function playerPlay (){
     let selection =""
     selection = window.prompt("Please choose your answer: Rock, Paper, Scissors");
     selection = selection.toLowerCase();
+
+    return (selection)
     
 }
-
+// 0 = tie 1 =human win 2 = computer
 function compareAnswers(playerSelection, computerSelection){
 
     if(computerSelection == "rock"){
-        if (playerSelection == "rock"){
-            return (0);  //0 = tie
-        }
-
-        else if (playerSelection == "paper"){
-            return (1);  //human win
-        }
-
-        else {
-            return(2);   //computer win
+        switch (playerSelection){
+            case 'rock':
+                return (0);
+            
+            case 'paper':
+                return(1);
+            
+            case 'scissor':
+                return(2);
+            
+            case 'scissors':
+                return(2);
+            
+            default:
+                console.log('Invalid Answer');
+                return(3);
         }
     }
 
     else if (computerSelection == "paper"){
-        if (playerSelection == "rock"){
-            return(2);
-        }
-
-        else if (playerSelection == "paper"){
-            return(0);
-        }
-
-        else {
-            return(1);
+        switch (playerSelection){
+            case 'rock':
+                return (2);
+            
+            case 'paper':
+                return(0);
+            
+            case 'scissor':
+                return(1);
+            
+            case 'scissors':
+                return(1);
+            
+            default:
+                console.log('Invalid Answer');
+                return(3);
         }
     }
 
     else { //scissor
-        if (playerSelection == "rock"){
-            return (1);
-        }
-
-        else if (playerSelection == "paper"){
-            return (2);
-        }
-
-        else {
-            return (0);
+        switch (playerSelection){
+            case 'rock':
+                return (1);
+            
+            case 'paper':
+                return(2);
+            
+            case 'scissor':
+                return(0);
+            
+            case 'scissors':
+                return(0);
+            
+            default:
+                console.log('Invalid Answer');
+                return(3);
         }
     }
 }
 
 const computerAnswer = computerPlay();
-console.log(computerAnswer);
+console.log("Computer plays " + computerAnswer);
 const playerAnswer = playerPlay();
 console.log(playerAnswer);
 
