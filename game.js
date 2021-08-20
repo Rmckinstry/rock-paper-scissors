@@ -50,77 +50,9 @@ function game(){
         }
     }
     
-    function playerPlay (){
-        let selection =""
-        //selection = window.prompt("Please choose your answer: Rock, Paper, Scissors");
-        selection = selection.toLowerCase();
-    
-        return (selection)
-        
-    }
-    // 0 = tie 1 =human win 2 = computer
-    function compareAnswers(playerSelection, computerSelection){
-    
-        if(computerSelection == "rock"){
-            switch (playerSelection){
-                case 'rock':
-                    return (0);
-                
-                case 'paper':
-                    return(1);
-                
-                case 'scissor':
-                    return(2);
-                
-                case 'scissors':
-                    return(2);
-                
-                default:
-                    return(3);
-            }
-        }
-    
-        else if (computerSelection == "paper"){
-            switch (playerSelection){
-                case 'rock':
-                    return (2);
-                
-                case 'paper':
-                    return(0);
-                
-                case 'scissor':
-                    return(1);
-                
-                case 'scissors':
-                    return(1);
-                
-                default:
-                    return(3);
-            }
-        }
-    
-        else { //scissor
-            switch (playerSelection){
-                case 'rock':
-                    return (1);
-                
-                case 'paper':
-                    return(2);
-                
-                case 'scissor':
-                    return(0);
-                
-                case 'scissors':
-                    return(0);
-                
-                default:
-                    return(3);
-            }
-        }
-    }
 }
 
-game()
+//game()
 
 /*let playAgain = window.prompt("Play again? 1 for YES -- 2 for NO");
 if (playAgain == 1){
@@ -132,3 +64,15 @@ else{
     console.log('Goodbye!')
 }
 */
+let answer = "test"
+
+function clicked (){
+    console.log("answer")
+}
+const rockButton = document.querySelector("#rockButton");
+const title = document.querySelector("h1");
+
+rockButton.addEventListener('click', clicked);
+
+
+
