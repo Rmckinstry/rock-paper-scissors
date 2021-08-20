@@ -64,15 +64,7 @@ else{
     console.log('Goodbye!')
 }
 */
-let answer = "test"
 
-function clicked (){
-    console.log("answer")
-}
-const rockButton = document.querySelector("#rockButton");
-const title = document.querySelector("h1");
-
-rockButton.addEventListener('click', clicked);
 
 
 
