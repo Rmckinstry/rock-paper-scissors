@@ -82,6 +82,10 @@ function game(){
         let pAnswer = playerAnswer;
         const computerAnswer = computerPlay();
         let winner = (compareAnswers(pAnswer,computerAnswer));
+
+        const playerResults = document.querySelector('#round-results');
+        playerResults.textContent= `${pAnswer.toUpperCase()} vs ${computerAnswer.toUpperCase()}`;
+
         console.log(pAnswer);
         console.log(computerAnswer)
         console.log(winner);
