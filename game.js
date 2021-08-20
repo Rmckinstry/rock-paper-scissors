@@ -52,7 +52,7 @@ function game(){
     
     function playerPlay (){
         let selection =""
-        selection = window.prompt("Please choose your answer: Rock, Paper, Scissors");
+        //selection = window.prompt("Please choose your answer: Rock, Paper, Scissors");
         selection = selection.toLowerCase();
     
         return (selection)
@@ -121,7 +121,8 @@ function game(){
 }
 
 game()
-let playAgain = window.prompt("Play again? 1 for YES -- 2 for NO");
+
+/*let playAgain = window.prompt("Play again? 1 for YES -- 2 for NO");
 if (playAgain == 1){
     console.log('NEW GAME')
     console.log();
@@ -130,3 +131,4 @@ if (playAgain == 1){
 else{
     console.log('Goodbye!')
 }
+*/
