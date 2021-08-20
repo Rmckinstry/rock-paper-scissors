@@ -1,16 +1,24 @@
 body{
-    background-color: silver;
+ background-color: silver;
+ background-image: url(background.jpg);
+ background-size: cover;
 }
 h1, h2{
     text-align: center;
+    
 }
 
 header{
     padding: 1.5em;
+    color: white;
 }
 .round-choices{
     text-align: center;
     padding: 1em;
     color:firebrick;
     font-weight: 900;
+}
+
+.score-box{
+    color: white;
 }
