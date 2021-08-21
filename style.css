@@ -1,21 +1,27 @@
 body{
- background-color: silver;
+ background-color:rgb(255,190,167);
+ background-image: url("rock-paper-scissors-flat-icons.png");
+ background-size: contain;
+ background-position:center;
+ background-repeat: no-repeat;
+ font-family: 'Shadows Into Light';
 }
 h1, h2{
     text-align: center;
+    font-size: 32px;
+}
+h3{
+    font-size: 24px;;
 }
 header{
-    padding: 1.5em;
+    padding: .6em;
     color: black;
 }
 .round-choices{
     text-align: center;
-    padding: 1em;
+    padding: .7em;
     color: black;
     font-weight: 900;
-}
-.winner-container{
-    padding: 10px;
 }
 
 .score-box{
@@ -28,4 +34,8 @@ header{
 }
 .comp-win{
     color:darkred;
+}
+.gameContainer{
+    width: 100%;
+    height:64vh;
 }

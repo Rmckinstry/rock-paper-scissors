@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header>
-        <h1>Rock Paper Scissors</h1>
-    </header>
 
     <div class=round-choices>
         <h2 id = round-results>Awaiting Match... </h2>
     </div>
-    <div class="winner-container">
-        <h2 id="round-win">Round hasn't started..</h2>
-    </div>
+   
     <div class="gameContainer">
         <div id="rock">
             <button id="rockButton">Rock</button>
@@ -31,8 +29,10 @@
         </div>
     </div>
 
+    <div class="winner-container">
+        <h2 id="round-win">Round hasn't started..</h2>
+    </div>
     <div class = "score-box">
-        <h2>Score</h2>
         <h3 id="playerScore">Player: 0</h3> 
         <h3 id="computerScore">Computer: 0</h3>
     </div>
