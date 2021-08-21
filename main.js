@@ -1,23 +1,34 @@
 function game(){
+    let pCount =0;
+    let cCount=0;
 
     const rockBtn = document.querySelector('#rockButton')
     const paperBtn = document.querySelector('#paperButton')
     const scissorsBtn = document.querySelector('#scissorsButton')
 
+    
     rockBtn.addEventListener('click', rockRound);
     paperBtn.addEventListener('click', paperRound);
     scissorsBtn.addEventListener('click', scissorsRound);
-
+   
     function rockRound(){
+       if(pCount < 5 && cCount < 5){
         playRound('rock');
+       } 
     }
 
     function paperRound(){
-        playRound('paper');
+        if(pCount < 5 && cCount < 5){
+            playRound('paper');
+        }
+        
     }
 
     function scissorsRound(){
-        playRound('scissors')
+        if(pCount < 5 && cCount < 5){
+            playRound('scissors')
+        }
+        
     }
 
     function playRound(playerAnswer){
@@ -82,13 +93,45 @@ function game(){
         let pAnswer = playerAnswer;
         const computerAnswer = computerPlay();
         let winner = (compareAnswers(pAnswer,computerAnswer));
+        
+        
+        const results = document.querySelector('#round-results');
+        results.textContent= `${pAnswer.toUpperCase()} vs ${computerAnswer.toUpperCase()}`;
 
-        const playerResults = document.querySelector('#round-results');
-        playerResults.textContent= `${pAnswer.toUpperCase()} vs ${computerAnswer.toUpperCase()}`;
+        const roundWin = document.querySelector('#round-win');
+        
 
-        console.log(pAnswer);
-        console.log(computerAnswer)
-        console.log(winner);
+        if (winner==1){
+            pCount++;
+            if(pCount<5){
+                roundWin.textContent = `PLAYER WINS THIS ROUND`;
+            }
+            else{
+                roundWin.classList.add("player-win");
+                roundWin.textContent = `PLAYER WINS THE GAME!!!`;
+            }
+            
+        }
+        else if (winner==2){
+            cCount++;
+            if(cCount<5){
+                roundWin.textContent = `COMPUTER WINS THIS ROUND`;
+            }
+            else{
+                roundWin.classList.add("comp-win");
+                roundWin.textContent = `COMPUTER WINS THE GAME!!!`;
+            }
+            
+        }
+        else{
+            roundWin.textContent = `TIE!!`
+        }
+
+        const playerScore = document.querySelector('#playerScore');
+        const computerScore = document.querySelector('#computerScore');
+
+        playerScore.textContent = `Player: ${pCount}`;
+        computerScore.textContent=`Computer: ${cCount}`;
     }
 }
 

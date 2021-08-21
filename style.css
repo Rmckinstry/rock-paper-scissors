@@ -1,7 +1,5 @@
 body{
  background-color: silver;
- background-image: url(background.jpg);
- background-size: cover;
 }
 h1, h2{
     text-align: center;
@@ -10,15 +8,26 @@ h1, h2{
 
 header{
     padding: 1.5em;
-    color: white;
+    color: black;
 }
 .round-choices{
     text-align: center;
     padding: 1em;
-    color:firebrick;
+    color: black;
     font-weight: 900;
+}
+.winner-container{
+    padding: 10px;
 }
 
 .score-box{
-    color: white;
+    color: black;
+}
+
+.player-win{
+    color:darkgreen;
+    
+}
+.comp-win{
+    color:darkred;
 }
