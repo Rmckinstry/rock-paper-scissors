@@ -43,7 +43,7 @@ header{
 button{
     width: 22%;
     height: 67%;
-    border-color:rgba(211, 211, 211,.3);
+    border-color:rgba(211, 211, 211,.5);
     border-width: medium;
     border-radius: 50%;
 }
