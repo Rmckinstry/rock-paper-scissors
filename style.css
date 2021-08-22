@@ -41,11 +41,27 @@ header{
     position: relative;
 }
 button{
-    width: 30%;
-    height: 70%;
- 
-    border: none;
+    width: 22%;
+    height: 67%;
+    border-color:rgba(211, 211, 211,.3);
+    border-width: medium;
+    border-radius: 50%;
+}
+#rockButton{
+    position: absolute;
+    background-color: transparent;
+    left:12%;
+    top:16%;
+}
+#paperButton{
+    position: absolute;
+    background-color: transparent;
+    left:39%;
+    top: 16%;
 }
 #scissorsButton{
     position: absolute;
+    background-color: transparent;
+    left: 66%;
+    top: 16%;
 }
