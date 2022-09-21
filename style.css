@@ -5,6 +5,8 @@ body{
  background-position:center;
  background-repeat: no-repeat;
  font-family: 'Shadows Into Light';
+
+ margin: 0px;
 }
 h1, h2{
     text-align: center;
@@ -19,7 +21,6 @@ header{
 }
 .round-choices{
     text-align: center;
-    padding: .7em;
     color: black;
     font-weight: 900;
 }
