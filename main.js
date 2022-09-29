@@ -31,6 +31,8 @@ function game(){
         
     }
 
+
+    // main play function
     function playRound(playerAnswer){
         
         function computerPlay () {

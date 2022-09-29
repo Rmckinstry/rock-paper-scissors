@@ -1,10 +1,6 @@
 body{
  background-color:rgb(255,190,167);
- background-image: url("rock-paper-scissors-flat-icons.png");
- background-size: contain;
- background-position:center;
- background-repeat: no-repeat;
- font-family: 'Shadows Into Light';
+ font-family: 'Bebas Neue', cursive;
 
  margin: 0px;
 }
