@@ -33,9 +33,11 @@ header{
     color:darkred;
 }
 .gameContainer{
+    margin: 100px 0px;
     width: 100%;
-    height:64vh;
-    position: relative;
+    
+    display: flex;
+    justify-content: space-evenly;
 }
 button{
     width: 22%;
@@ -45,20 +47,32 @@ button{
     border-radius: 50%;
 }
 #rockButton{
-    position: absolute;
-    background-color: transparent;
-    left:12%;
-    top:16%;
+    width: 350px;
+    height: 350px;
 }
+
+#rockButton:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+
 #paperButton{
-    position: absolute;
-    background-color: transparent;
-    left:39%;
-    top: 16%;
+    width: 350px;
+    height: 350px;
 }
+
+#paperButton:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
 #scissorsButton{
-    position: absolute;
-    background-color: transparent;
-    left: 66%;
-    top: 16%;
+    width: 350px;
+    height: 350px;
+}
+
+#scissorsButton:hover{
+    scale: 1.1;
+    cursor: pointer;
 }
