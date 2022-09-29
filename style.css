@@ -1,78 +1,75 @@
-body{
- background-color:rgb(255,190,167);
- font-family: 'Bebas Neue', cursive;
+body {
+  background-color: rgb(245, 218, 202);
+  font-family: "Bebas Neue", cursive;
 
- margin: 0px;
+  margin: 0px;
 }
-h1, h2{
-    text-align: center;
-    font-size: 32px;
+h1,
+h2 {
+  text-align: center;
+  font-size: 32px;
 }
-h3{
-    font-size: 24px;;
+h3 {
+  font-size: 28px;
 }
-header{
-    padding: .6em;
-    color: black;
+header {
+  padding: 0.6em;
+  color: black;
 }
-.round-choices{
-    text-align: center;
-    color: black;
-    font-weight: 900;
-}
-
-.score-box{
-    color: black;
+.round-choices {
+  text-align: center;
+  color: black;
+  font-weight: 900;
 }
 
-.player-win{
-    color:darkgreen;
-    
-}
-.comp-win{
-    color:darkred;
-}
-.gameContainer{
-    margin: 100px 0px;
-    width: 100%;
-    
-    display: flex;
-    justify-content: space-evenly;
-}
-button{
-    width: 22%;
-    height: 67%;
-    border-color:rgba(211, 211, 211,.5);
-    border-width: medium;
-    border-radius: 50%;
-}
-#rockButton{
-    width: 350px;
-    height: 350px;
+.score-box {
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
-#rockButton:hover{
-    scale: 1.1;
-    cursor: pointer;
+.player-win {
+  color: darkgreen;
+}
+.comp-win {
+  color: darkred;
+}
+.gameContainer {
+  margin: 100px 0px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
 }
 
-
-#paperButton{
-    width: 350px;
-    height: 350px;
+#rockButton {
+  width: 350px;
+  height: 350px;
 }
 
-#paperButton:hover{
-    scale: 1.1;
-    cursor: pointer;
+#rockButton:hover {
+  scale: 1.1;
+  cursor: pointer;
 }
 
-#scissorsButton{
-    width: 350px;
-    height: 350px;
+#paperButton {
+  width: 350px;
+  height: 350px;
 }
 
-#scissorsButton:hover{
-    scale: 1.1;
-    cursor: pointer;
+#paperButton:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+#scissorsButton {
+  width: 350px;
+  height: 350px;
+}
+
+#scissorsButton:hover {
+  scale: 1.1;
+  cursor: pointer;
 }
