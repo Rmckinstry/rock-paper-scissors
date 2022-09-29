@@ -1,67 +1,75 @@
-body{
- background-color:rgb(255,190,167);
- background-image: url("rock-paper-scissors-flat-icons.png");
- background-size: contain;
- background-position:center;
- background-repeat: no-repeat;
- font-family: 'Shadows Into Light';
+body {
+  background-color: rgb(245, 218, 202);
+  font-family: "Bebas Neue", cursive;
+
+  margin: 0px;
 }
-h1, h2{
-    text-align: center;
-    font-size: 32px;
+h1,
+h2 {
+  text-align: center;
+  font-size: 32px;
 }
-h3{
-    font-size: 24px;;
+h3 {
+  font-size: 28px;
 }
-header{
-    padding: .6em;
-    color: black;
+header {
+  padding: 0.6em;
+  color: black;
 }
-.round-choices{
-    text-align: center;
-    padding: .7em;
-    color: black;
-    font-weight: 900;
+.round-choices {
+  text-align: center;
+  color: black;
+  font-weight: 900;
 }
 
-.score-box{
-    color: black;
+.score-box {
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
-.player-win{
-    color:darkgreen;
-    
+.player-win {
+  color: darkgreen;
 }
-.comp-win{
-    color:darkred;
+.comp-win {
+  color: darkred;
 }
-.gameContainer{
-    width: 100%;
-    height:64vh;
-    position: relative;
+.gameContainer {
+  margin: 100px 0px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
 }
-button{
-    width: 22%;
-    height: 67%;
-    border-color:rgba(211, 211, 211,.5);
-    border-width: medium;
-    border-radius: 50%;
+
+#rockButton {
+  width: 350px;
+  height: 350px;
 }
-#rockButton{
-    position: absolute;
-    background-color: transparent;
-    left:12%;
-    top:16%;
+
+#rockButton:hover {
+  scale: 1.1;
+  cursor: pointer;
 }
-#paperButton{
-    position: absolute;
-    background-color: transparent;
-    left:39%;
-    top: 16%;
+
+#paperButton {
+  width: 350px;
+  height: 350px;
 }
-#scissorsButton{
-    position: absolute;
-    background-color: transparent;
-    left: 66%;
-    top: 16%;
+
+#paperButton:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+#scissorsButton {
+  width: 350px;
+  height: 350px;
+}
+
+#scissorsButton:hover {
+  scale: 1.1;
+  cursor: pointer;
 }
